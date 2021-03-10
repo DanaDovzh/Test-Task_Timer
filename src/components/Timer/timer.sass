@@ -1,0 +1,20 @@
+.wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-top: 20%
+
+.timer
+    &__time
+        font-size: 72px
+        font-weight: 700
+        margin-bottom: 10px
+        @media  ( max-width: 475px )
+            font-size: 62px
+    &__btns
+        display: flex
+        & button + button
+            margin-left: 5px
+        & button
+            font-size: 18px
